@@ -1,0 +1,16 @@
+<div class="card col-sm pb-4" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{data?.title}}</h5>
+        <p class="card-text">
+            Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+        </p>
+        {{renderValue()}}
+        <button class="btn btn-primary" (click)="updateTitle()">Update</button>
+    </div>
+    <div class="container mt-4">
+        <h5>Dependency Injection (Child)</h5>
+        <h6>Count: {{helperService.count}}</h6>
+        <button class="btn btn-primary" (click)="updateAction()">Increment Value</button>
+    </div>
+</div>

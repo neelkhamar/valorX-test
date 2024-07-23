@@ -1,0 +1,16 @@
+<div class="container pt-5 pb-5">
+    <button class="btn btn-primary" (click)="fetchData()">Fetch Data</button>
+    <div class="container mt-4">
+        <div class="row">
+            @for (record of data; track $index) {
+            <app-card [data]="record" />
+            }
+        </div>
+    </div>
+    <hr />
+    <div class="container mt-4">
+        <h4>Dependency Injection (Parent)</h4>
+        <h5>Count: {{helperService.count}}</h5>
+        <button class="btn btn-primary" (click)="updateAction()">Increment Value</button>
+    </div>
+</div>
